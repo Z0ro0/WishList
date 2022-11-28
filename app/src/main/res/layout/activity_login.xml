@@ -8,4 +8,45 @@
     android:background="@drawable/background"
     tools:context=".login">
 
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        android:background="#E6FFFFFF"
+        android:rowCount="6"
+        android:columnCount="1">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/loginpeople"
+            android:background="#00ffffff"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"
+            android:layout_gravity="center"
+            android:textSize="40dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="id"
+            android:id="@+id/id"
+            android:layout_margin="20dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="password"
+            android:id="@+id/pw"
+            android:layout_margin="20dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"
+            android:id="@+id/btnlogin"
+            android:backgroundTint="#A8E1FF"
+            android:layout_margin="20dp"/>
+    </GridLayout>
 </LinearLayout>
