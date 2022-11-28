@@ -23,6 +23,7 @@
                 android:textSize="30dp"
                 android:layout_margin="30dp"
                 android:layout_columnSpan="2"
+                android:layout_gravity="center"
                 android:text="***님의 위시리스트"/>
 
         <ImageView
@@ -31,7 +32,9 @@
             android:layout_rowSpan="2"
             android:layout_row="1"
             android:layout_column="0"
-            android:src="@drawable/airpods" />
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/airpods"
+            android:id="@+id/wishphoto"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -39,7 +42,8 @@
             android:layout_column="1"
             android:textSize="20dp"
             android:layout_marginLeft="20dp"
-            android:text="에어팟 맥스" />
+            android:text="에어팟 맥스"
+            android:id="@+id/wishtext"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -47,7 +51,8 @@
             android:layout_column="1"
             android:textSize="10dp"
             android:layout_marginLeft="20dp"
-            android:text="https://www.apple.com/kr/airpods-max/"/>
+            android:text="https://www.apple.com/kr/airpods-max/"
+            android:id="@+id/wishlink"/>
 
     </GridLayout>
 

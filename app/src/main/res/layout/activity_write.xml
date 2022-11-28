@@ -8,4 +8,57 @@
     android:background="@drawable/background"
     tools:context=".write">
 
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        android:background="#E6FFFFFF"
+        android:columnCount="1"
+        android:rowCount="6">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="원하는 물품"
+            android:id="@+id/name"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="링크"
+            android:id="@+id/link"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="#A8E1FF"
+            android:textColor="#322A2A"
+            android:textSize="18dp"
+            android:text="사진 추가"
+            android:id="@+id/addphoto"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="#A8E1FF"
+            android:textColor="#322A2A"
+            android:textSize="18dp"
+            android:text="등록"
+            android:id="@+id/add"/>
+
+
+    </GridLayout>
+
 </LinearLayout>
