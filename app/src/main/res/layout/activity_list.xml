@@ -15,6 +15,7 @@
         android:paddingBottom="20dp"
         android:layout_gravity="center"
         android:orientation="vertical">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -23,56 +24,30 @@
             android:layout_margin="30dp"
             android:layout_gravity="top"
             android:text="김민영 님의 위시리스트"/>
-
-        <ScrollView
-            android:id="@+id/Scroll_View"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="9">
-
-            <ListView
-                android:id="@+id/listview"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"></ListView>
-
-        </ScrollView>
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:padding="5dp"
             android:orientation="horizontal">
             <Button
                 android:layout_width="0dp"
-                android:id="@+id/AddBtn"
-                android:text="ADD"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:id="@+id/btnAdd"
+                android:text="추가"/>
+
             <Button
-                android:id="@+id/DeleteBtn"
                 android:layout_width="0dp"
-                android:text="Delete"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:id="@+id/btnDelete"
+                android:text="삭제"/>
         </LinearLayout>
-
+        <ListView
+            android:dividerHeight="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/list"/>
     </LinearLayout>
-
-
-<!--    <LinearLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:orientation="horizontal">-->
-<!--        <Button-->
-<!--            android:layout_width="0dp"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_weight="1"/>-->
-<!--        <Button-->
-<!--            android:layout_width="0dp"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_weight="1"/>-->
-<!--    </LinearLayout>-->
 
 </LinearLayout>
