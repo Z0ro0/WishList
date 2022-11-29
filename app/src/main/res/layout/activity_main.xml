@@ -53,5 +53,7 @@
             android:layout_marginLeft="20dp"
             android:text="https://www.apple.com/kr/airpods-max/"
             android:id="@+id/wishlink"/>
+
     </GridLayout>
+
 </LinearLayout>
