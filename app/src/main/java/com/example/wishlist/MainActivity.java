@@ -13,11 +13,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.ArrayAdapter;
 import android.widget.PopupWindow;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -82,6 +84,15 @@ public class MainActivity extends AppCompatActivity {
                 initiatePopupWindow();
             }
         });
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Toast.makeText(getApplicationContext(), list.get(i).toString() + "삭제되었습니다", Toast.LENGTH_SHORT).show();
+                list.remove(i);
+                adapter.notifyDataSetChanged();
+            }
+        });
     }
 
     // 팝업윈도우 띄움 메소드
@@ -135,4 +146,6 @@ public class MainActivity extends AppCompatActivity {
             adapter.notifyDataSetChanged();
         }
     };
+
+    // 삭제 버튼 클릭시 리스트 삭제
 }

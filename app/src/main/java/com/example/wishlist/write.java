@@ -11,7 +11,7 @@ import android.widget.EditText;
 
 public class write extends AppCompatActivity {
     EditText name, link;
-    Button setOn, addphoto;
+    Button setOn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

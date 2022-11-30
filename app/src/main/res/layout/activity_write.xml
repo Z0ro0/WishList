@@ -24,7 +24,7 @@
             android:layout_marginTop="50dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:text="원하는 물품"
+            android:hint="원하는 물품"
             android:id="@+id/name"/>
 
         <EditText
@@ -33,7 +33,7 @@
             android:layout_marginTop="50dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:text="링크"
+            android:hint="링크"
             android:id="@+id/link"/>
 
         <Button
@@ -48,10 +48,22 @@
             android:text="등록"
             android:id="@+id/setOn"/>
 
+<!--        <Button-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="50dp"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_marginRight="20dp"-->
+<!--            android:backgroundTint="#A8E1FF"-->
+<!--            android:textColor="#322A2A"-->
+<!--            android:textSize="18dp"-->
+<!--            android:text="삭제"-->
+<!--            android:id="@+id/delete"/>-->
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:backgroundTint="#A8E1FF"
@@ -59,9 +71,6 @@
             android:textSize="18dp"
             android:text="닫기"
             android:id="@+id/close"/>
-
-
-
 
     </GridLayout>
 

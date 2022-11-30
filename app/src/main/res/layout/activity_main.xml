@@ -34,20 +34,22 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:id="@+id/btnAdd"
+                android:backgroundTint="#A8E1FF"
                 android:text="추가"/>
 
-            <Button
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:id="@+id/btnDelete"
-                android:text="삭제"/>
+<!--            <Button-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:id="@+id/btnDelete"-->
+<!--                android:text="삭제"/>-->
         </LinearLayout>
         <ListView
             android:dividerHeight="2dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/listView"/>
+            android:id="@+id/listView">
+        </ListView>
     </LinearLayout>
 
 </LinearLayout>
