@@ -15,10 +15,20 @@ public class logo extends AppCompatActivity {
         setContentView(R.layout.activity_logo);
 
         Button start = (Button) findViewById(R.id.start);
+        Button login = (Button) findViewById(R.id.sign);
+
         start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), com.example.wishlist.login.class);
                 startActivity(intent);
             }
         });

@@ -32,13 +32,13 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="id"
+            android:hint="id"
             android:id="@+id/id"
             android:layout_margin="20dp"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="password"
+            android:hint="password"
             android:id="@+id/pw"
             android:layout_margin="20dp"/>
         <Button

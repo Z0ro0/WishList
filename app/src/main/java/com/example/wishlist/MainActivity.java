@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
 import android.util.DisplayMetrics;
 import android.util.SparseBooleanArray;
 import android.view.Display;
@@ -19,12 +20,14 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.ArrayAdapter;
 import android.widget.PopupWindow;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
+    TextView edtid;
     // 팝업창 닫는 버튼
     private Button close;
 
@@ -57,6 +60,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Intent intent = getIntent();
+        String text = intent.getStringExtra("id");
+
+        edtid = findViewById(R.id.edtid);
+        edtid.setText(text);
+
         // 윈도우 매니저, displayMetrics : 가로와 세로길이를 지정하기 위해
         WindowManager wm = getWindowManager(); // 윈도우 매니저 객체
         Display dp = wm.getDefaultDisplay();
@@ -65,6 +74,8 @@ public class MainActivity extends AppCompatActivity {
 
         mWidthPixel = dm.widthPixels;
         mHeightPixel = dm.heightPixels;
+
+
 
         // 리스트뷰 객체
         listView = (ListView) findViewById(R.id.listView);

@@ -48,17 +48,17 @@
             android:backgroundTint="#D9D9D9"
             android:id="@+id/sign"/>
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            android:layout_gravity="center"
-            android:text="로그인"
-            android:textColor="@color/black"
-            android:textSize="20dp"
-            android:backgroundTint="#D9D9D9"
-            android:id="@+id/login"/>
+<!--        <Button-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="40dp"-->
+<!--            android:layout_marginLeft="30dp"-->
+<!--            android:layout_marginRight="30dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:text="로그인"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="20dp"-->
+<!--            android:backgroundTint="#D9D9D9"-->
+<!--            android:id="@+id/login"/>-->
     </GridLayout>
 </LinearLayout>
